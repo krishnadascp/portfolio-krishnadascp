@@ -335,4 +335,11 @@ form .btn2 {
     .header {
         background-image: url(images/background-image.jpg);
     }
+    .header-text {
+        margin-top: 50%;
+        font-size: 16px;
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
 }
