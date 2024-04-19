@@ -21,13 +21,13 @@ function closeMenu() {
 
 function sendMail() {
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "username",
-        Password : "password",
-        To : 'them@website.com',
-        From : "you@isp.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
+        SecureToken : "7f8a9671-7650-45e0-8f13-26912d112a44",
+        To : 'krishnadascp24@gmail.com',
+        From : "krishnadascp24@gmail.com",
+        Subject : "Portfolio - Enquiry",
+        Body: '<b>Name: </b>' + document.getElementById('name').value + '<br/>' +
+            '<b>Email: </b>' + document.getElementById('email').value + '<br/>' +
+            '<b>Message: </b>' + document.getElementById('message').value
     }).then(
     message => alert(message)
     );
