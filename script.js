@@ -18,3 +18,19 @@ function openMenu() {
 function closeMenu() {
     sidemenu.style.right = '-200px';
 }
+
+function sendEmail() {
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "krishnadascp1999@gmail.com",
+        Password : "69A4430C8DA010E1AFBB1F88ABBBB9E18E1A",
+        To : 'krishnadascp1999@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "Portfolio - Enquiry",
+        Body: "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value
+        + "<br> Message: " + document.getElementById("message").value
+    }).then(
+        message => alert("email sent successfully")
+    );
+}
