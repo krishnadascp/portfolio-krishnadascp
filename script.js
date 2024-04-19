@@ -20,6 +20,7 @@ function closeMenu() {
 }
 
 function sendMail() {
+    const msg = document.getElementById('msg');
     Email.send({
         SecureToken : "7f8a9671-7650-45e0-8f13-26912d112a44",
         To : 'krishnadascp24@gmail.com',
@@ -29,6 +30,11 @@ function sendMail() {
             '<b>Email: </b>' + document.getElementById('email').value + '<br/>' +
             '<b>Message: </b>' + document.getElementById('message').value
     }).then(
-    message => alert(message)
+        response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function () {
+               msg.innerHTML =""
+            }, 2000) 
+        }
     );
 }
