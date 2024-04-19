@@ -24,7 +24,7 @@ function sendEmail() {
         // secureToken: "671b70d1-e2d8-47e5-92ce-a728bcbd912f",
         Host : "smtp.gmail.com",
         Username : "krishnadascp1999@gmail.com",
-        Password : "69A4430C8DA010E1AFBB1F88ABBBB9E18E1A",
+        Password : "password",
         To : 'krishnadascp24@gmail.com',
         From : document.getElementById("email").value,
         Subject : "Portfolio - Enquiry",
